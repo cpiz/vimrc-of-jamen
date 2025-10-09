@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VIMRC_FILE="~/.vimrc"
-INSTALL_DIR="~/.vimrc-of-jamen"
+VIMRC_FILE="$HOME/.vimrc"
+INSTALL_DIR="$HOME/.vimrc-of-jamen"
 CUSTOM_VIMRC="$INSTALL_DIR/vimrc"
 SOURCE_LINE="source $CUSTOM_VIMRC"
 
@@ -14,7 +14,7 @@ else
     git -C "$INSTALL_DIR" pull
 fi
 
-# 3. 检查 ~/.vimrc 中是否已包含引用
+# 3. 检查 $HOME/.vimrc 中是否已包含引用
 # 使用 grep -q 进行静默查找，找到则 $? 为 0，未找到则为 1
 # 使用 grep -F 按固定字符串查找，避免特殊字符被解析为正则
 if grep -qF "$SOURCE_LINE" "$VIMRC_FILE"; then
