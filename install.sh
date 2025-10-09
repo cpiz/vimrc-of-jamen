@@ -27,5 +27,7 @@ else
     echo "在 $VIMRC_FILE 中未找到引用，正在添加..."
     # 使用 >> 将引用语句追加到文件末尾
     echo "$SOURCE_LINE" >> "$VIMRC_FILE"
-    echo "成功添加引用到 $VIMRC_FILE ，安装完毕！"
+    echo "成功添加引用到 $VIMRC_FILE"
 fi
+
+echo "安装完成！重启 Vim 以应用新配置。"
