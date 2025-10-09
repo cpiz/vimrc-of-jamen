@@ -18,10 +18,10 @@ fi
 # 使用 grep -q 进行静默查找，找到则 $? 为 0，未找到则为 1
 # 使用 grep -F 按固定字符串查找，避免特殊字符被解析为正则
 if grep -qF "$SOURCE_LINE" "$VIMRC_FILE"; then
-    echo "检测到 $VIMRC_FILE 中已引用 $CUSTOM_VIMRC，无需任何操作。"
+    echo "检测到 $VIMRC_FILE 中已引用 $CUSTOM_VIMRC ，无需任何操作。"
 else
     echo "在 $VIMRC_FILE 中未找到引用，正在添加..."
     # 使用 >> 将引用语句追加到文件末尾
     echo "$SOURCE_LINE" >> "$VIMRC_FILE"
-    echo "成功添加引用到 $VIMRC_FILE，安装完毕！"
+    echo "成功添加引用到 $VIMRC_FILE ，安装完毕！"
 fi
