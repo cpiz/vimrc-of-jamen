@@ -134,11 +134,8 @@ set backspace=2
 " 允许backspace和光标键跨越行边界
 set whichwrap+=<,>,h,l
 
-" 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
-" 需要配合终端工具的"鼠标报告""功能
-set mouse=a
-set selection=exclusive
-set selectmode=mouse,key
+" 关闭鼠标功能，避免复制粘贴冲突
+set mouse=
 
 " 通过使用: commands命令，告诉我们文件的哪一行被改变过
 set report=0
