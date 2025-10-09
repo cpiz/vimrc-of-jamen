@@ -32,8 +32,8 @@ autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
 "代码补全：显示候选菜单，只有一个后选项也显示菜单，不自动选择第一个，自动补全最长公共前缀
 set completeopt=menu,menuone,noselect,longest
 
-"共享剪贴板
-set clipboard=unnamed
+" 鼠标选中后自动复制到系统剪贴板
+set clipboard=autoselectplus
 
 "从不备份
 set nobackup
