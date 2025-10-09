@@ -2,7 +2,7 @@
 
 VIMRC_FILE="$HOME/.vimrc"
 INSTALL_DIR="$HOME/.vimrc-of-jamen"
-CUSTOM_VIMRC="$INSTALL_DIR/vimrc"
+CUSTOM_VIMRC="~/.vimrc-of-jamen/vimrc"
 SOURCE_LINE="source $CUSTOM_VIMRC"
 
 # 安装或更新脚本
