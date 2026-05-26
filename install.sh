@@ -10,7 +10,7 @@ echo "开始安装或更新 jamen 的 vim 配置..."
 if [ ! -d "$INSTALL_DIR" ]; then
     # 第一次安装
     echo "检测到 $INSTALL_DIR 不存在，正在克隆配置仓库..."
-    git clone https://gitee.com/cpiz/vimrc-of-jamen.git "$INSTALL_DIR"
+    git clone https://github.com/cpiz/vimrc-of-jamen.git "$INSTALL_DIR"
 else
     # 目录已存在，进行更新
     echo "$INSTALL_DIR 已存在，正在更新配置仓库..."

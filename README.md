@@ -7,5 +7,5 @@
 ## 部署方法
 
 ```bash
-sh -c "$(curl -fsSL https://gitee.com/cpiz/vimrc-of-jamen/raw/master/install.sh)"
+sh -c "$(curl -fsSL https://github.com/cpiz/vimrc-of-jamen/raw/master/install.sh)"
 ```
